@@ -28,7 +28,7 @@ def find_max_correct_element(txt):
   max_temp = [];
   for i in range(0,len(txt)-2):
     data2 = txt[i:(len(txt)-1)];
-    max_temp.append(check_data_all(data2));
+    max_temp.append(check_data(data2));
   print max(max_temp);
   f1=open('./testfile.txt', 'a');
   f1.write(`max(max_temp)`+",");
